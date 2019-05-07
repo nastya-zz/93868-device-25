@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Nastya Zelenenkaya](https://up.htmlacademy.ru/htmlcss/25/user/93868).
-* Наставник: `Неизвестно`.
+* Наставник: [Анна Лисененкова](https://htmlacademy.ru/profile/ankhena).
 
 ---
 
