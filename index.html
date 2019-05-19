@@ -10,13 +10,27 @@
         <div class="main-header-logo">
           <img src="img/logo-device.svg" width="163" height="35" alt="логотип магазина девайс">
         </div>
-        <p class="site-search">
-          Поиск на сайте <!--здесь будет поле для поиска на сайте-->
-        </p>
+        <div class="site-search">
+          <form class="search" action="https://echo.htmlacademy.ru" method="post">
+            <label>
+              <img src="img/search.svg" alt="поиск по сайту">
+              <input type="search" name="search" placeholder="Поиск по сайту">
+            </label>
+          </form>
+        </div>
         <div class="user-navigation">
-          <a class="login-link" href="#">Войти</a>
-          <a class="compare-products" href="#">Сравнить</a>
-          <a class="basket" href="#">Корзина</a>
+          <a class="login-link" href="login.html">
+            <img src="img/user.svg" alt="Войти">
+            Войти
+          </a>
+          <a class="compare-products" href="compare.html">
+            <img src="img/compare.svg" alt="Сравнить">
+            Сравнить
+          </a>
+          <a class="basket" href="cart.html">
+            <img src="img/cart.svg" alt="Корзина">
+            Корзина
+          </a>
         </div>
         <ul class="navigation-catalog-list">
           <li><a href="catalog.html">Каталог товаров+</a></li>
@@ -50,11 +64,13 @@
             проверить работоспособность покупки. Всякое бывает.</p>
           <p class="map-container">
             <a class="map" href="#" aria-label="Карта проезда">
-              <img src="img/map.png" width="560" height="222" alt="г. Москва, ул. Строителей, 15
-"><!--здесь будет карта-->
+              <img src="img/map.png" width="560" height="222" alt="Город Москава улица строителей дом 15">
             </a>
           </p>
-          <span class="button">Напишите нам</span>
+
+          <button class="button" type="button">
+            Напишите нам
+          </button>
       </section>
     </main>
     <footer class="main-footer">
@@ -76,9 +92,18 @@
       </div>
       <div class="footer-user-navigation">
         <div class="footer-user-navigation-list">
-          <a  href="#">Войти</a>
-          <a href="#">Сравнить</a>
-          <a href="#">Корзина</a>
+          <a class="login-link" href="login.html">
+            <img src="img/user.svg" alt="Войти">
+            Войти
+          </a>
+          <a class="compare-products" href="compare.html">
+            <img src="img/compare.svg" alt="Сравнить">
+            Сравнить
+          </a>
+          <a class="basket" href="cart.html">
+            <img src="img/cart.svg" alt="Корзина">
+            Корзина
+          </a>
         </div>
         <p class="contact-phone"> тел.: +7(945)495-95-95</p>
         <p class="copyright">
@@ -88,5 +113,37 @@
         </p>
       </div>
     </footer>
+
+    <section class="modal modal-contact-us">
+      <h3 class="visually-hidden">Напишите нам</h3>
+      <form class="contact-us" action="https://echo.htmlacademy.ru" method="post">
+        <p class="user-name-field">
+          <label>
+            Ваше имя:
+            <input type="text" name="user-name" placeholder="Имя Фамилия" required>
+          </label>
+        </p>
+        <p class="user-email">
+          <label>
+            Ваш e-mail:
+            <input type="email" name="user-imail" placeholder="email@example.com" required>
+          </label>
+        </p>
+        <p>
+          <label for="message-text">Текст письма:</label><br>
+          <textarea name="name" rows="8" cols="80" id="message-text" placeholder="В свободной форме"></textarea>
+        </p>
+        <button class="send" type="submit" value="отправить">Отправить</button>
+      </form>
+      <button class="modal-close" type="button">x</button>
+    </section>
+    <section class="modal modal-map">
+      <h3 class="visually-hidden">Как к нам проехать</h3>
+      <p>
+        <img src="img/map-big-jpg.jpg" width="960" height="559" alt="Город Москава улица строителей дом 15">
+      </p>
+      <button class="modal-close" type="button">x</button>
+    </section>
+
   </body>
 </html>
