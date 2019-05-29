@@ -1,0 +1,489 @@
+@font-face {
+    font-family: 'gilroyextrabold';
+    src: url('../fonts/gilroyextrabold-webfont.woff2') format('woff2'),
+         url('../fonts/gilroyextrabold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'gilroylight';
+    src: url('../fonts/gilroylight-webfont.woff2') format('woff2'),
+         url('../fonts/gilroylight-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 300;
+  color: #464646;
+
+  background-color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+.button,
+button.send {
+  width: 220px;
+  height: 40px;
+
+  font-family: "gilroyextrabold", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 3.6px;
+
+  vertical-align: top;
+  text-align: center;
+  text-transform: uppercase;
+
+  color: #000000;
+  white-space: normal;
+  word-wrap: normal;
+
+  background-color: #f0c52e;
+  border: none ;
+}
+
+.main-header {
+  width: 1160px;
+  height: 299px;
+
+  background-color: rgba(255, 204, 51, 0.5);
+}
+
+.main-header ul {
+  list-style: none;
+}
+
+.search input {
+  color: rgba(0, 0, 0, 0.3);
+
+  font-family: "Open Sans", Arial sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  letter-spacing: 0.15px;
+  font-weight: 300;
+
+  border: none;
+  background-color: inherit;
+}
+
+
+
+.user-navigation a {
+  color: #000000;
+
+  font-family: "Open Sans", Arial sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  letter-spacing: 0.15px;
+  font-weight: 300;
+}
+
+.user-navigation a:hover,
+.user-navigation a:focus {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.user-navigation a:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.navigation-catalog-list a{
+  color: #000000;
+
+  font-family: "gilroyextrabold", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 3.6px;
+
+
+  text-transform: uppercase;
+}
+
+.navigation-catalog-list a:hover,
+.navigation-catalog-list a:focus {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.navigation-catalog-list a:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.site-navigation a,
+.footer-site-navigation a {
+  color: #000000;
+
+  font-family: "gilroyextrabold", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 3.6px;
+
+
+  text-transform: uppercase;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.site-navigation a:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+/* стили для лого, когда это ссылка
+
+.main-header-logo img:hover {
+  opacity: 0.6;
+}
+
+.main-header-logo img:active {
+  opacity: 0.3;
+}
+*/
+
+.container {
+  background-color: #ffffff;
+}
+
+.slide-title {
+  color: #000000;
+
+  font-family: "gilroyextrabold", Arial, sans-serif;
+  font-size: 47px;
+  line-height: 56px;
+  letter-spacing: 0.47px;
+}
+
+ul.slide-details{
+  list-style: none;
+}
+
+.feature {
+  color: #464646;
+
+  font-family: "Open Sans", Arial sans-serif;
+  font-size: 13px;
+  line-height: 20px;
+  letter-spacing: 0.13px;
+  font-weight: 300;
+}
+
+.feature-value {
+  color: #000000;
+
+  font-family: 'gilroylight', Arial, sans-serif;
+  font-size: 36px;
+  line-height: 48px;
+  letter-spacing: 0.36px;
+}
+
+ul.popular-list {
+  list-style: none;
+}
+
+.category a {
+  color: #000000;
+
+  font-family: "gilroyextrabold", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.18px;
+  text-align: left;
+}
+
+div.category-back {
+  width: 160px;
+  height: 160px;
+
+  background-color: rgba(255, 204, 51, 0.5);
+}
+
+.category img  {
+  padding-top: 32px;
+
+  background-origin: padding-box;
+}
+
+.category a:hover div,
+.category a:focus div  {
+  background-color: #f0c52e;
+}
+
+.category a:active img,
+ .category a:active {
+  color: rgba(0, 0, 0, 0.3);
+
+  opacity: 0.3;
+}
+
+.services {
+  background-color: #e5e5e5;
+}
+
+.services h2 {
+  color: #000000;
+
+  font-family: "gilroyextrabold", Arial, sans-serif;
+  font-size: 47px;
+  line-height: 48px;
+  letter-spacing: 0.47px;
+  text-align: left;
+
+}
+
+.services p {
+  color: #464646;
+
+  font-family: "Open Sans", Arial sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  letter-spacing: 0.15px;
+  text-align: left;
+
+  word-wrap: break-word;
+
+}
+
+.slides-switches {
+  list-style: none;
+}
+
+.button-service {
+  width: 160px;
+  height: 40px;
+
+  margin-top: 40px;
+
+  border: none;
+}
+
+.button-service:active {
+  color: #f0c52e;
+  text-align: left;
+
+  width: 278px;
+  height: 40px;
+
+  background-color: #000000;
+}
+
+.current-service {
+  color: #f0c52e;
+  text-align: left;
+
+  width: 278px;
+  height: 40px;
+
+  background-color: #000000;
+}
+
+.brands ul {
+  list-style:  none;
+}
+
+.column h2
+{
+  color: #000000;
+
+  font-family: "gilroyextrabold", Arial, sans-serif;
+  font-size: 47px;
+  line-height: 48px;
+  letter-spacing: 0.47px;
+  text-align: left;
+}
+
+.column p {
+  font-family: "Open Sans", Arial sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  letter-spacing: 0.15px;
+  text-align: left;
+
+  word-wrap: break-word;
+}
+
+.column .button {
+  width: 260px;
+  height: 40px;
+
+  border: none;
+}
+
+.about-us ul {
+  margin-left: 20px;
+  padding-left: 0px;
+
+  list-style: circle;
+}
+
+.about-us li {
+  color: #e5e5e5;
+}
+
+.about-us span {
+  color: #000000;
+
+  font-family: "gilroyextrabold", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 40px;
+  text-align: left;
+}
+
+.main-footer {
+  color: #ffffff;
+
+  background-color: #464646;
+}
+
+.main-footer ul {
+  list-style:   none;
+}
+
+.main-footer a {
+  color: #ffffff;
+}
+
+.footer-logo img:hover {
+  opacity: 0.6;
+}
+
+.footer-logo img:active {
+  opacity: 0.3;
+}
+
+.footer-site-navigation a:hover {
+  color:rgba(255, 255, 255, 0.6) ;
+}
+
+.footer-site-navigation a:active {
+  rgba(255, 255, 255, 0.3);
+}
+
+.footer-user-navigation-list a {
+  color: rgba(255, 255, 255, 0.7) ;
+
+  font-family: "Open Sans", Arial sans-serif;
+  font-size: 15px;
+  line-height: 36px;
+  letter-spacing: 0.15px;
+  font-weight: 300;
+}
+
+.footer-user-navigation-list a:hover {
+  color: #ffffff;
+}
+
+.footer-user-navigation-list a:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.contact-phone {
+  text-align:;
+}
+a.htmlacademy-logo:hover {
+  opacity: 0.6;
+}
+
+a.htmlacademy-logo:active {
+  opacity: 0.3;
+}
+
+.modal {
+  width: 960px;
+  height: 553px;
+
+  background-color: #ffffff;
+  box-shadow: 0 10px 20px 0 rgba(4, 6, 6, 0.2);
+}
+
+form.contact-us label {
+  color: #000000;
+
+  font-family: "gilroyextrabold", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: left;
+}
+
+form.contact-us input,
+form.contact-us textarea {
+  color: rgba(70, 70, 70, 0.4);
+
+  width: 360px;
+  height: 50px;
+  padding-left: 20px;
+
+  font-family: "Open Sans", Arial sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+
+  background-color: #f2f2f2;
+  border: none;
+}
+
+form.contact-us textarea {
+  width: 760px;
+  height: 156px;
+
+  padding-top: 18px;
+}
+
+form.contact-us input:hover,
+form.contact-us textarea:hover {
+  background-color: #eaeaea;
+}
+
+form.contact-us input:focus,
+form.contact-us textarea:focus {
+  color: #464646;
+
+  font-family: "Open Sans", Arial sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  text-align: left;
+
+  background-color: #ffffff;
+  border: 3px solid #f0c52e;
+}
+
+form.contact-us input:invalid:not(:placeholder-shown),
+form.contact-us textarea:invalid:not(:placeholder-shown) {
+  color: rgba(70, 70, 70, 0.4);
+
+  font-family: "Open Sans", Arial sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+
+  background-color: #f6dada;
+}
+
+button.send {
+
+}
