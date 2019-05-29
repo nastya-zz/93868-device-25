@@ -36,6 +36,10 @@ a {
   text-decoration: none;
 }
 
+.inner-page ul li  {
+  list-style: none;
+}
+
 .visually-hidden {
   position: absolute;
   clip: rect(0 0 0 0);
@@ -111,6 +115,10 @@ button.send {
   color: rgba(0, 0, 0, 0.3);
 }
 
+.user-navigation a.logout {
+  color: rgba(0, 0, 0, 0.3);
+}
+
 .navigation-catalog-list a{
   color: #000000;
 
@@ -132,9 +140,33 @@ button.send {
   color: rgba(0, 0, 0, 0.3);
 }
 
+.navigation-catalog-list ul a{
+  display: none;
+
+  color: #000000;
+
+  font-family: "Open Sans", Arial sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  letter-spacing: 0.15px;
+  font-weight: 300;
+
+  text-transform: none;
+  word-wrap: break-word;
+
+  border: none;
+  background-color: inherit;
+}
+
+.navigation-catalog-list:hover ul a {
+  display: block;
+}
+
 .site-navigation a,
 .footer-site-navigation a {
   color: #000000;
+
+  display: block;
 
   font-family: "gilroyextrabold", Arial, sans-serif;
   font-size: 18px;
@@ -484,6 +516,216 @@ form.contact-us textarea:invalid:not(:placeholder-shown) {
   background-color: #f6dada;
 }
 
-button.send {
+.inner-page h1.page-title {
+  color: #000000;
 
+  font-family: "gilroyextrabold", Arial, sans-serif;
+  font-size: 47px;
+  line-height: 48px;
+  letter-spacing: 0.47px;
+  text-align: left;
+}
+ul.breadcrumbs {
+  list-style: none;
+}
+.breadcrumbs li a {
+  color: rgba(0, 0, 0, 0.3);
+
+  font-family: "Open Sans", Arial sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.14px;
+  font-weight: 300;
+}
+
+.breadcrumbs li a:hover {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.breadcrumbs li a:active{
+  color:rgba(0, 0, 0, 0.1);
+}
+.breadcrumbs-current {
+  color: rgba(0, 0, 0, 0.3);
+
+  font-family: "Open Sans", Arial sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.14px;
+  font-weight: 300;
+}
+
+.filters {
+  width: 647px;
+  height: 1287px;
+
+  background-color: #ebebeb;
+}
+
+.filter fieldset {
+  border: none;
+}
+
+.filters h2,
+.sorting-goods h2{
+  color: #000000;
+
+  font-family: "gilroyextrabold", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 3.2px;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.filters legend {
+  color: #000000;
+
+  font-family: "gilroyextrabold", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.18px;
+  text-align: left;
+}
+
+.filters ul {
+  color: #000000;
+
+  font-family: "Open Sans", Arial sans-serif;
+  font-size: 14px;
+  line-height: 40px;
+  letter-spacing: 0.14px;
+  font-weight: 300;
+
+  list-style: none;
+}
+
+.sorting-goods {
+  width: 1439px;
+  height: 71px;
+
+  background-color: #ebebeb;
+}
+
+ul.sorting-list {
+  list-style: none;
+}
+
+.sorting-list li a{
+  color: rgba(0, 0, 0, 0.3);
+
+  font-family: "Open Sans", Arial sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+
+  display: inline-block;
+  float: left;
+}
+
+.sorting-list li a:hover {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.sorting-list li a:active,
+li.current-type a {
+  color: #000000;
+}
+
+.item-title {
+  color: #000000;
+
+  font-family: "gilroyextrabold", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.18px;
+  text-align: left;
+}
+
+.item-price {
+  color: #464646;
+
+  font-family: 'gilroylight', Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.16px;
+  text-align: right;
+}
+
+.catalog img {
+  display: block;
+
+  width: 360px;
+  height: 380px;
+
+  background-color: #ebebeb;
+}
+
+.pagination-list {
+  margin-bottom: 100px;
+
+  width: 759px;
+  height: 70px;
+
+  background-color: #ebebeb;
+}
+
+
+.pagination-item a {
+  color: rgba(0, 0, 0, 0.3);
+
+  font-family: "gilroyextrabold", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 3.2px;
+  text-align: left;
+
+}
+
+.pagination-item a:hover {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.pagination-item a:active {
+  color: #000000;
+}
+
+.pagination-item .current {
+  color: #000000;
+}
+
+.pagination-button a{
+
+  width: 136px;
+  height: 70px;
+
+  color: #000000;
+
+  font-family: "gilroyextrabold", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 3.2px;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
+
+  background-color: inherit;
+}
+
+.btn-back a:hover {
+  background-color: #d9d9d9;
+}
+.btn-next a:hover {
+  background-color: #d9d9d9;
+}
+
+.btn-back a:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+.btn-next a:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.footer-user-navigation-list .logout {
+  color: rgba(255, 255, 255, 0.3);
 }
