@@ -5,12 +5,13 @@
     <title>HTML Academy: Девайс каталог</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&display=swap&subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
-  <body>
+  <body class="inner-page">
     <header class="main-header">
       <nav>
         <a class="main-haeder-logo" href="index.html">
-          <img src="img/footer-logo.svg" width="163" height="35" alt="логотип магазина девайс">
+          <img src="img/logo-device.svg" width="163" height="35" alt="логотип магазина девайс">
         </a>
         <div class="site-search">
           <form class="search" action="https://echo.htmlacademy.ru" method="post">
@@ -102,6 +103,15 @@
           <button class="filter-button button">Показать</button>
         </form>
       </section>
+      <section class="sorting-goods">
+        <h2>Сортировка:</h2>
+        <ul class="sorting-list">
+          <li class="current-type"><a href="#">По цене</a></li>
+          <li><a href="#">По типу</a></li>
+          <li><a href="#">По популярности</a></li>
+        </ul>
+      </section>
+
       <section class="catalog">
         <h2 class="visually-hidden">Список товаров</h2>
         <ul class="catalog-list">
@@ -149,14 +159,31 @@
               </p>
             </a>
           </ul>
+          <ul class="pagination-list">
+            <li class="pagination-button btn-back">
+              <a href="#">Назад</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-item current pagination-item" href="#">1</a>
+            </li>
+            <li class="pagination-item">
+              <a href="#">2</a>
+            </li>
+            <li class="pagination-item">
+              <a href="#">3</a>
+            </li>
+            <li class="pagination-button btn-next">
+              <a href="#">Вперед</a>
+            </li>
+          </ul>
         </section>
     </main>
     <footer class="main-footer">
       <div class="footer-logo">
-        <a class="footer-logo" href="index.html"><img src="img/logo-device.svg" width="163" height="35" alt="логотип магазина девайс"></a>
+        <a class="footer-logo" href="index.html"><img src="img/footer-logo.svg" width="163" height="35" alt="логотип магазина девайс"></a>
         <p class="footer-adress">г. Москва, ул. Строителей, 15</p>
       </div>
-      <div class="footer-site-navigation footer-social">
+      <div class="footer-navigation">
         <ul class="footer-site-navigation">
           <li><a href="delivery.html">Доставка</a></li>
           <li><a href="warranty.html">Гарантия</a></li>
