@@ -2,7 +2,7 @@
     font-family: 'Gilroy';
     src: url('../fonts/gilroyextrabold-webfont.woff2') format('woff2'),
          url('../fonts/gilroyextrabold-webfont.woff') format('woff');
-    font-weight: 700;
+    font-weight: 800;
     font-style: normal;
 
 }
@@ -54,7 +54,7 @@ button.send {
   font-family: "Gilroy", Arial, sans-serif;
   font-size: 18px;
   line-height: 24px;
-  font-weight: 700;
+  font-weight: 800;
   letter-spacing: 3.6px;
 
   vertical-align: top;
@@ -125,7 +125,7 @@ button.send {
   font-size: 18px;
   line-height: 24px;
   letter-spacing: 3.6px;
-  font-weight: 700;
+  font-weight: 800;
 
 
   text-transform: uppercase;
@@ -172,7 +172,7 @@ button.send {
   font-size: 18px;
   line-height: 24px;
   letter-spacing: 3.6px;
-  font-weight: 700;
+  font-weight: 800;
 
   text-transform: uppercase;
 }
@@ -208,7 +208,7 @@ button.send {
   font-size: 47px;
   line-height: 56px;
   letter-spacing: 0.47px;
-  font-weight: 700;
+  font-weight: 800;
 }
 
 ul.slide-details{
@@ -246,7 +246,7 @@ ul.popular-list {
   font-size: 18px;
   line-height: 24px;
   letter-spacing: 0.18px;
-  font-weight: 700;
+  font-weight: 800;
   text-align: left;
 }
 
@@ -287,7 +287,7 @@ div.category-back {
   line-height: 48px;
   letter-spacing: 0.47px;
   text-align: left;
-  font-weight: 700;
+  font-weight: 800;
 
 }
 
@@ -350,7 +350,7 @@ div.category-back {
   line-height: 48px;
   letter-spacing: 0.47px;
   text-align: left;
-  font-weight: 700;
+  font-weight: 800;
 }
 
 .column p {
@@ -388,7 +388,7 @@ div.category-back {
   font-size: 16px;
   line-height: 40px;
   text-align: left;
-  font-weight: 700;
+  font-weight: 800;
 }
 
 .main-footer {
@@ -465,7 +465,7 @@ form.contact-us label {
   font-size: 18px;
   line-height: 24px;
   text-align: left;
-  font-weight: 700;
+  font-weight: 800;
 }
 
 form.contact-us input,
@@ -531,7 +531,7 @@ form.contact-us textarea:invalid:not(:placeholder-shown) {
   line-height: 48px;
   letter-spacing: 0.47px;
   text-align: left;
-  font-weight: 700;
+  font-weight: 800;
 }
 ul.breadcrumbs {
   list-style: none;
@@ -583,7 +583,7 @@ ul.breadcrumbs {
   letter-spacing: 3.2px;
   text-align: left;
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 800;
 }
 
 .filters legend {
@@ -594,7 +594,7 @@ ul.breadcrumbs {
   line-height: 24px;
   letter-spacing: 0.18px;
   text-align: left;
-  font-weight: 700;
+  font-weight: 800;
 }
 
 .filters ul {
@@ -649,7 +649,7 @@ li.current-type a {
   line-height: 24px;
   letter-spacing: 0.18px;
   text-align: left;
-  font-weight: 700;
+  font-weight: 800;
 }
 
 .item-price {
@@ -690,7 +690,7 @@ li.current-type a {
   line-height: 24px;
   letter-spacing: 3.2px;
   text-align: left;
-  font-weight: 700;
+  font-weight: 800;
 
 }
 
@@ -717,7 +717,7 @@ li.current-type a {
   font-size: 16px;
   line-height: 24px;
   letter-spacing: 3.2px;
-  font-weight: 700;
+  font-weight: 800;
   text-align: center;
   vertical-align: middle;
   text-transform: uppercase;
