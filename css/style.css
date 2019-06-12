@@ -16,13 +16,15 @@
     font-style: normal;
 
 }
-/*
-body > *,
+
+/* body > *,
 body > * > *,
 body > * > * > * {
   background-color: rgba(156, 195, 225, 0.5);
-} */
+}
+ */
 
+/* глобальные стили */
 
 body {
   margin: 0;
@@ -88,8 +90,7 @@ button.send {
 } */
 
 
- a.button,
-button.button  {
+ a.button  {
 color: #000000;
 
 white-space: normal;
@@ -117,6 +118,31 @@ background: transparent;
 border: none;
 
 }
+
+button.button {
+  position: relative;
+  min-width: 132px;
+  height: 40px;
+
+  color: #000000;
+
+  white-space: normal;
+  word-wrap: normal;
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 800;
+  letter-spacing: 3.6px;
+  vertical-align: middle;
+  text-align: center;
+  text-transform: uppercase;
+
+  background: transparent;
+
+  border: none;
+
+}
+
  a.button::before,
  button.button::before {
   position: absolute;
@@ -132,17 +158,23 @@ border: none;
   vertical-align: middle;
 }
 
+button.button::before {
+  top: 17px;
+}
+
 a.button:hover,
 button.button:hover {
   background-color: #f0c52e;
 }
 
+/* стили блока центровщика */
 .container {
   margin: 0 auto;
   width: 1160px;
   position: relative;
 }
 
+/* стили шапки сайта */
 .main-header {
   width: 1160px;
   background-color: #f7e296;
@@ -462,7 +494,7 @@ a.basket:active::before {
 }
 
 
-
+/* стили шапки внутренних  страниц*/
 
 .inner-page .main-header-logo img:hover {
   opacity: 0.6;
@@ -471,7 +503,11 @@ a.basket:active::before {
 .inner-page .main-header-logo img:active {
   opacity: 0.3;
 }
-*/
+
+/* стили main */
+
+/* оформление слайдов */
+
 .slider {
   margin-bottom: 110px;
   position: absolute;
@@ -595,6 +631,8 @@ a.basket:active::before {
   text-align: right;
 }
 
+
+
 .feature {
   color: #464646;
 
@@ -663,6 +701,8 @@ a.basket:active::before {
   padding: 0;
 } */
 
+/* популярные категории товаров */
+
 .popular-categories {
   padding-top: 478px;
   margin-bottom: 105px;
@@ -729,12 +769,16 @@ a.basket:active::before {
   opacity: 0.3;
 }
 
+
+/* стили слайдера с сервисами */
+
 .services-wrap section,
 .slides-switches-wrap {
   margin-top: -85px;
 }
 
 .services {
+
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-between;
@@ -744,6 +788,15 @@ a.basket:active::before {
   min-height: 320px;
 
   background-color: #e5e5e5;
+}
+
+::before {
+  position: absolute;
+  width: 100%;
+
+  background-color: #e5e5e5;
+
+  content: "";
 }
 
 .delivery,
@@ -847,7 +900,7 @@ a.basket:active::before {
   background-color: #000000;
 }
 
-.current-service {
+.button.current-service {
   margin: 0;
   padding-left: 15px;
   color: #f0c52e;
@@ -859,6 +912,7 @@ a.basket:active::before {
   background-color: #000000;
 }
 
+/* список брендов */
 .brands ul {
   margin: 0;
   padding: 0;
@@ -872,6 +926,7 @@ a.basket:active::before {
   list-style:  none;
 }
 
+/* колонки с информацией о нас и контактами */
 .column {
   display: flex;
   justify-content: space-between;
@@ -916,10 +971,25 @@ a.basket:active::before {
   padding: 0;
 }
 
-div.column a.button,
-div.column button.button {
-  width: 260px;
 
+
+.about-us a.button {
+  display: block;
+  margin: 0;
+  padding: 0;
+  padding: 11px 0;
+  width: 260px;
+  height: 18px;
+  background: transparent;
+
+}
+
+.contacts .button {
+  padding: 10px 0;
+  width: 260px;
+  height: 40px;
+
+  border: none;
 }
 
 .column a.button::before,
@@ -935,6 +1005,15 @@ div.column button.button {
  background-color: #f0c52e;
  text-align:  center;
  vertical-align: middle;
+}
+
+.column button.button::before{
+  top: 17px;
+}
+
+.about-us a.button:hover,
+.contacts button.button:hover {
+  background-color: #f0c52e;
 }
 
 .about-us ul {
@@ -958,6 +1037,7 @@ div.column button.button {
   font-weight: 800;
 }
 
+/* стили подвала */
 
 .main-footer {
 
@@ -1104,6 +1184,8 @@ a.htmlacademy-logo:active {
   opacity: 0.3;
 }
 
+
+/*  стили модальных окон*/
 .modal {
   width: 960px;
   height: 553px;
