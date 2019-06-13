@@ -731,6 +731,8 @@ a.basket:active::before {
 
   display: flex;
   flex-direction: column-reverse;
+
+  text-decoration: none;
 }
 
 .category h3{
@@ -901,11 +903,26 @@ a.basket:active::before {
 }
 
 .button-service {
+  position: relative;
   width: 160px;
 
   margin-bottom: 25px;
 
   border: none;
+}
+
+.button-service:not(.current-service)::before {
+  position: absolute;
+  top: 16px;
+  left: 0;
+  min-width: 160px;
+  height: 8px;
+  z-index: -1;
+
+  content: "";
+  background-color: #f0c52e;
+  text-align:  center;
+  vertical-align: middle;
 }
 
 .button.button-service:active {
@@ -1082,7 +1099,7 @@ p.map-container {
 }
 
 .column button.button::before{
-  top: 17px;
+  top: 18px;
 }
 
 .about-us a.button:hover,
@@ -1223,7 +1240,18 @@ ul.footer-site-navigation {
   width: 43px;
   height: 43px;
 
-  background-color: #000000;
+}
+
+.footer-social a svg {
+  opacity: 0.3;
+}
+
+.footer-social a svg:hover {
+  opacity: 1;
+}
+
+.footer-social a svg:active {
+  opacity: 0.1;
 }
 
 .footer-site-navigation a:hover {
@@ -1245,7 +1273,7 @@ ul.footer-site-navigation {
   display: flex;
   justify-content: flex-end;
   width: 500px;
-  margin-bottom: 25px;
+  margin-bottom: 34px;
 }
 
 .footer .login-link {
@@ -1313,7 +1341,7 @@ ul.footer-site-navigation {
 }
 
 p.contact-phone {
-  margin-bottom: 70px;
+  margin-bottom: 61px;
 }
 
 .footer-user-navigation-list a:hover {
