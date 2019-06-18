@@ -2277,3 +2277,8 @@ ul.pagination-list {
 
   background-image: url("../img/footer-compare.svg");
 }
+
+.inner-page .wrapper{
+  z-index: 10;
+  background-image: linear-gradient(to bottom, #ebebeb 5%, white 5%);
+}
