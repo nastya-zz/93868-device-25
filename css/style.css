@@ -1680,8 +1680,6 @@ ul.breadcrumbs {
 
 .filters {
   width: 265px;
-
-  background-color: #ebebeb;
 }
 
 .filter-range  {
@@ -1932,10 +1930,7 @@ ul.breadcrumbs {
  vertical-align: middle;
 } */
 
-.filters h2 {
 
-  background-color: #d9d9d9;
-}
 
 .filters h2,
 .sorting-goods h2{
@@ -1982,7 +1977,6 @@ ul.breadcrumbs {
   height: 71px;
   padding-left: 75px;
 
-  background-color: #ebebeb;
 }
 
 ul.sorting-list {
@@ -2278,7 +2272,8 @@ ul.pagination-list {
   background-image: url("../img/footer-compare.svg");
 }
 
-.inner-page .wrapper{
-  z-index: 10;
-  background-image: linear-gradient(to bottom, #ebebeb 5%, white 5%);
+.inner-page .wrapper {
+  width: 100%;
+  background-image:
+    linear-gradient(to bottom, rgba(220, 220, 220, 0.5) 70px, white 70px);
 }
