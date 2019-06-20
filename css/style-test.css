@@ -1,0 +1,36 @@
+* {
+  box-sizing: border-box
+}
+
+.line-1 {
+  background: linear-gradient(to right, #d9d9d9 285px, #ebebeb 285px);
+}
+
+.line-2 {
+  background: linear-gradient(to right, #ebebeb 285px, white 285px);
+}
+
+.inner-container {
+
+	display: flex;
+ 	width: 70%;
+ 	min-width: 1160px;
+  
+  	margin: auto;
+  	border: 1px dashed gray;
+}
+
+.filter-title,
+.filtres {
+	width: 285px;
+}
+
+.sorting-wrapper {
+	display: flex;
+	width: 875px;
+}
+
+.sorting-wrapper,
+.catalog {
+	flex: 1;
+}
