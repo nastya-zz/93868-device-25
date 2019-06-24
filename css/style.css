@@ -17,14 +17,7 @@
 
 }
 
-/* body > *,
-body > * > *,
-body > * > * > * {
-  background-color: rgba(156, 195, 225, 0.5);
-}
- */
 
-/* глобальные стили */
 
 body {
   margin: 0;
@@ -973,6 +966,8 @@ li.category:nth-child(2) img{
   max-height: 320px;
 
   border-right: 7px solid black;
+
+  list-style: none;
 }
 
 
@@ -2272,7 +2267,7 @@ ul.breadcrumbs {
 }
 
 ul.sorting-list {
-  width: 300px;
+  width: 620px;
   display: flex;
   justify-content: space-between;
 
@@ -2294,6 +2289,10 @@ ul.sorting-list {
 
   display: inline-block;
   float: left;
+}
+
+.sorting-list li:last-child {
+  padding-left: auto;
 }
 
 .sorting-list li a:hover {
