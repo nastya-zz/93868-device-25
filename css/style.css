@@ -395,7 +395,7 @@ a.basket:active::before {
   width: 16px;
   height: 2px;
 
-  background-color: #000000;
+  background-color: rgba(184, 169, 116, 1);
 
 }
 
@@ -537,11 +537,14 @@ a.basket:active::before {
 .slide-details  a.button {
   position: relative;
   display: block;
+
   margin: 0;
   padding: 0;
   padding: 11px 44px;
+  margin-bottom: 50px;
   width: 132px;
   height: 18px;
+
   background: transparent;
 }
 
@@ -655,9 +658,32 @@ a.basket:active::before {
   z-index: -1;
 }
 
+.feature-table{
+  width: 430px;
+}
+
+.feature-table tbody {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: flex-start;
+}
+.feature-table tbody td {
+  width: 155px;
+}
+
+.feature-table tbody td:nth-child(2) {
+  width: 140px;
+}
+
+.feature,
+.feature-value {
+  display: flex;
+  justify-content: flex-start;
+}
 
 
 .feature {
+
   color: #464646;
 
   font-family: "Open Sans", Arial sans-serif;
@@ -665,9 +691,13 @@ a.basket:active::before {
   line-height: 20px;
   letter-spacing: 0.13px;
   font-weight: 300;
+  text-align: left;
 }
 
-.feature-value {
+
+.feature-value  {
+
+
   color: #000000;
 
   font-family: "Gilroy", Arial, sans-serif;
@@ -675,6 +705,10 @@ a.basket:active::before {
   line-height: 48px;
   letter-spacing: 0.36px;
   font-weight: 300;
+}
+
+.slide.slide-2 td {
+  width: 160px;
 }
 
 /* стили радиокнопок слайдера */
@@ -973,6 +1007,8 @@ li.category:nth-child(2) img{
   max-height: 320px;
 
   border-right: 7px solid black;
+
+  list-style: none;
 }
 
 
@@ -1523,14 +1559,91 @@ a.htmlacademy-logo:active {
 
 /*  стили модальных окон*/
 .modal {
-  width: 960px;
-  height: 553px;
+  position: fixed;
+
+  width: 760px;
+
 
   background-color: #ffffff;
   box-shadow: 0 10px 20px 0 rgba(4, 6, 6, 0.2);
+  z-index: 100;
+}
+
+.modal-contact-us {
+  top: 120px;
+  left: 50%;
+  margin-left: -480px;
+  padding: 90px 100px 80px 100px;
+
+  display: none;
+}
+
+.modal-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  margin: 22px;
+
+  width: 55px;
+  height: 55px;
+
+  font-size: 0;
+
+  background-color: rgba(240, 197, 46, 0.6);
+
+  border-radius: 50%;
+  border: 0;
+
+  cursor: pointer;
+}
+
+.modal-close::before,
+.modal-close::after {
+  content: "";
+
+  position: absolute;
+
+  right: 12px;
+
+  width: 30px;
+  height: 3px;
+
+  background-color: #ffffff;
+}
+
+
+.modal-close::before {
+  transform: rotate(45deg);
+}
+
+.modal-close::after {
+  transform: rotate(-45deg);
+}
+
+.modal-close:hover,
+ .modal-close:focus {
+  background-color: #f0c52e;
+}
+
+.modal-close:active {
+  background-color:  rgba(240, 197, 46, 0.3);
+}
+
+form.contact-us {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  width: 760px;
+}
+.contact-us p {
+  padding: 0;
+  margin: 0;
 }
 
 form.contact-us label {
+
   color: #000000;
 
   font-family: "Gilroy", Arial, sans-serif;
@@ -1538,6 +1651,12 @@ form.contact-us label {
   line-height: 24px;
   text-align: left;
   font-weight: 800;
+}
+
+form.contact-us .user-name-field,
+form.contact-us .user-email {
+  margin-bottom: 30px;
+
 }
 
 form.contact-us input,
@@ -1548,6 +1667,7 @@ form.contact-us textarea {
   height: 50px;
   padding-left: 20px;
 
+
   font-family: "Open Sans", Arial sans-serif;
   font-size: 14px;
   line-height: 18px;
@@ -1555,6 +1675,7 @@ form.contact-us textarea {
 
   background-color: #f2f2f2;
   border: none;
+  box-sizing: border-box;
 }
 
 form.contact-us textarea {
@@ -1562,6 +1683,7 @@ form.contact-us textarea {
   height: 156px;
 
   padding-top: 18px;
+  margin-bottom: 50px;
 }
 
 form.contact-us input:hover,
@@ -1595,6 +1717,40 @@ form.contact-us textarea:invalid:not(:placeholder-shown) {
   background-color: #f6dada;
 }
 
+.button.send {
+  width: 200px;
+}
+
+.button.send:before {
+  position: absolute;
+  top: 16px;
+  left: 0;
+  width: 200px;
+  height: 8px;
+  z-index: -1;
+
+  content: "";
+  background-color: #f0c52e;
+  text-align:  center;
+  vertical-align: middle;
+}
+
+.modal-map {
+  width: 960px;
+  height: 559px;
+  top: 120px;
+  left: 50%;
+  margin-left: -480px;
+
+  display: none;
+}
+
+.modal-map p {
+  padding: 0;
+  margin: 0;
+}
+
+/* стили внутренней страницы */
 .inner-page .main-header {
   margin-bottom: 40px;
   padding-bottom: 10px;
@@ -2272,9 +2428,9 @@ ul.breadcrumbs {
 }
 
 ul.sorting-list {
-  width: 300px;
+  width: 600px;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
 
   margin: 0;
   padding: 0;
@@ -2284,8 +2440,31 @@ ul.sorting-list {
   list-style: none;
 }
 
+.sorting-list li {
+  margin-right: 30px;
+}
+
+.sorting-list .arrows {
+
+  display: flex;
+  justify-content: space-between;
+  width: 40px;
+  margin-left: auto;
+}
+
+
+
+.sorting-list a svg {
+  fill: #c3c2c2;
+}
+
+.sorting-list .sort-active  svg {
+  fill: #000000;
+}
+
 .sorting-list li a{
   color: rgba(0, 0, 0, 0.3);
+
 
   font-family: "Open Sans", Arial sans-serif;
   font-size: 14px;
@@ -2548,9 +2727,19 @@ ul.pagination-list {
   color: rgba(0, 0, 0, 0.3);
 }
 
+.pagination-wrap  ul {
+  display: flex;
+
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+}
+
 .pagination-wrap li {
   margin-left: 30px;
 }
+
 
 .footer-user-navigation-list .logout {
   color: rgba(255, 255, 255, 0.3);
