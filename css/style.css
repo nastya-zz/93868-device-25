@@ -2005,6 +2005,10 @@ form.contact-us textarea:invalid:not(:placeholder-shown) {
   margin: 0;
 }
 
+.modal-show {
+  display: block;
+}
+
 /* стили внутренней страницы */
 .inner-page .main-header {
   margin-bottom: 40px;
