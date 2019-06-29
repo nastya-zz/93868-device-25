@@ -1705,7 +1705,7 @@ ul.footer-site-navigation {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  minwidth: 500px;
+  min-width: 500px;
   margin-bottom: 34px;
 }
 
