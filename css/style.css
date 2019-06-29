@@ -198,7 +198,7 @@ button.button:hover {
 
 div.main-header-logo  {
   position: absolute;
-  top: -20px;
+  top: -17px;
   left: 60px;
   width: 163px;
   height: 35;
@@ -558,7 +558,7 @@ a.basket:active::before {
 /* оформление слайдов */
 
 .slider {
-  margin-bottom: 105px;
+  margin-bottom: 65px;
   position: relative;
 }
 .slider-list {
@@ -575,7 +575,7 @@ a.basket:active::before {
   margin: 0;
   padding: 0;
   padding: 11px 44px;
-  margin-bottom: 50px;
+
   width: 132px;
   height: 18px;
 
@@ -610,7 +610,7 @@ a.basket:active::before {
 
   margin: 0;
   padding: 0;
-  margin-bottom: 100px;
+
   margin-top: -110px;
   display: none;
 }
@@ -672,18 +672,8 @@ a.basket:active::before {
 
 .slide-details .slide-description {
 
-  margin-bottom: 42px;
+  margin-bottom: 40px;
 }
-
-/* table {
-  margin: 0;
-  padding: 0;
-  border-spacing: 40px 0;
-} */
-
-
-
-
 
 .slide-description {
   padding-bottom: 65px;
@@ -707,6 +697,7 @@ a.basket:active::before {
 
 .feature-table{
   width: 430px;
+  padding: 50px 0;
 }
 
 .feature-table tbody {
@@ -771,19 +762,7 @@ a.basket:active::before {
   cursor: pointer;
 }
 
-.slider-controls label::after {
-  content:"";
-  position: absolute;
-  top: 7px;
-  left: 15px;
-  z-index: 1;
 
-  width: 12px;
-  height: 12px;
-
-  background: #ffffff;
-  border-radius: 50%;
-}
 
 .slider-list {
   margin: 0;
@@ -827,9 +806,9 @@ a.basket:active::before {
 
 .slider-controls {
   position: absolute;
-  right: 40px;
-  top: 215px;
-  bottom: 104px;
+  right: 42px;
+
+  bottom: 183px;
   z-index: 100;
 
   display: flex;
@@ -2012,6 +1991,11 @@ form.contact-us textarea:invalid:not(:placeholder-shown) {
 
 }
 
+.inner-container .filters,
+.inner-container .catalog {
+  padding-bottom: 15px;
+}
+
 .filter-title,
 .filtres {
   margin: 0;
@@ -2021,8 +2005,9 @@ form.contact-us textarea:invalid:not(:placeholder-shown) {
 
 .sorting-wrapper {
 	display: flex;
-	width: 765px;
-  padding-left: 70px;
+	width: 835px;
+  padding-left: 75px;
+  box-sizing: border-box;
 }
 
 .sorting-wrapper h2 {
@@ -2068,11 +2053,6 @@ form.contact-us textarea:invalid:not(:placeholder-shown) {
 .line-2 .catalog {
   background: #ffffff;
 }
-
-
-
-
-
 
 
 .inner-page main.container {
@@ -2196,12 +2176,9 @@ ul.breadcrumbs {
   position: relative;
 }
 
-.price-controls {
-  margin-bottom: 20px;
-}
-
 .range-controls .scale {
   height: 2px;
+  margin-bottom: 10px;
 
   background: rgb(219, 219, 219);
 }
@@ -2238,6 +2215,11 @@ ul.breadcrumbs {
 .range-toggle:active {
   width: 5px;
   height: 5px;
+}
+
+
+.price-controls {
+  margin-bottom: 15px;
 }
 
 .price-controls label {
@@ -2464,7 +2446,6 @@ ul.breadcrumbs {
   text-align:  center;
   vertical-align: middle;
 
-
 }
 
 
@@ -2527,15 +2508,15 @@ ul.breadcrumbs {
 
 }
 
-ul.sorting-list {
+.sorting-list {
   width: 600px;
   display: flex;
   justify-content: flex-start;
 
   margin: 0;
   padding: 0;
-  margin-top: 28px;
-  margin-left: 60px;
+  margin-top: 25px;
+  margin-left: 55px;
 
   list-style: none;
 }
@@ -2590,7 +2571,7 @@ li.current-type a {
 .catalog {
   margin: 0
   padding: 0;
-  padding-top: 65px;
+  padding-top: 68px;
   padding-left: 75px;
   width: 760px;
 }
@@ -2616,7 +2597,7 @@ ul.catalog-list {
 }
 
 ul.catalog-list li {
-  margin-bottom: 40px;
+  margin-bottom: 45px;
 }
 
 ul.catalog-list li:nth-child(2n) {
@@ -2772,6 +2753,7 @@ ul.pagination-list {
 
   margin: 0;
   padding: 0;
+  margin-top: -13px;
   margin-bottom: 60px;
   width: 760px;
   min-height: 70px;
@@ -2783,17 +2765,21 @@ ul.pagination-list {
 
 .pagination-wrap {
   display: flex;
+  width: 488px;
+  justify-content:center;
 }
 
 
 .pagination-item a {
+  display: block;
+
   color: rgba(0, 0, 0, 0.3);
 
   font-family: "Gilroy", Arial, sans-serif;
   font-size: 16px;
   line-height: 24px;
   letter-spacing: 3.2px;
-  text-align: left;
+  text-align: center;
   font-weight: 800;
   text-decoration: none;
 
@@ -2815,7 +2801,7 @@ ul.pagination-list {
   margin: 0;
   padding: 0;
   display: block;
-  padding: 30px 0 30px 0;
+  padding: 23px 0 23px 0;
 
   width: 136px;
 
@@ -2858,7 +2844,7 @@ ul.pagination-list {
 }
 
 .pagination-wrap li {
-  margin-left: 30px;
+  width: 40px;
 }
 
 
@@ -2911,8 +2897,12 @@ ul.pagination-list {
 
 }
 
-.inner-page .logout {
-  width: 50px;
+.inner-page .footer-account {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 250px;
+
 
 }
 
