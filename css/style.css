@@ -222,7 +222,7 @@ div.main-header-logo  {
  }
 
 
- input {
+ .site-search input {
    box-sizing: border-box;
    padding: 15px;
    padding-left: 40px;
@@ -335,7 +335,7 @@ div.main-header-logo  {
   margin: 0;
   padding: 0;
   padding-left: 25px;
-  width: 260px;
+  width: 280px;
 }
 
 .login-link::before {
@@ -360,16 +360,16 @@ div.main-header-logo  {
   position: relative;
   margin: 0;
   padding: 0;
-  padding-left: 50px;
+  padding-left: 27px;
 
-  width: 140px;
+  width: 120px;
 }
 .compare-products::before {
   position: absolute;
   content: "";
 
   top: 11px;
-  left: 27px;
+  left: 7px;
 
   width: 13px;
   height: 13px;
@@ -1850,11 +1850,11 @@ form.contact-us textarea:invalid:not(:placeholder-shown) {
 
 .inner-page .main-navigation {
   margin-bottom: 0;
-  padding-bottom: 0;
+  padding-bottom: 8px;
 }
 
 .inner-page .site-search {
-  width: 492px;
+  width: 540px;
 }
 
 .inner-page h1 {
@@ -1873,8 +1873,9 @@ form.contact-us textarea:invalid:not(:placeholder-shown) {
 }
 
 .personal-account {
+  box-sizing: border-box;
   margin-right: 15px;
-  padding-left: 35px;
+  padding-left: 27px;
   width: 280px;
 }
 
@@ -1906,19 +1907,20 @@ form.contact-us textarea:invalid:not(:placeholder-shown) {
 }
 
 .inner-page  .compare-products {
+  box-sizing: border-box;
   position: relative;
   margin: 0;
   padding: 0;
-  padding-left: 37px;
+  padding-left: 27px;
 
-  width: 91px;
+  width: 120px;
 }
 .inner-page .compare-products::before {
   position: absolute;
   content: "";
 
   top: 11px;
-  left: 17px;
+  left: 7px;
 
   width: 13px;
   height: 13px;
@@ -2187,13 +2189,15 @@ ul.breadcrumbs {
 }
 
 .filter-range-title {
-  margin-bottom: 25px;
+  margin-bottom: 30px;
 }
 
 .range-controls {
   position: relative;
+}
 
-  margin-bottom: 32px;
+.price-controls {
+  margin-bottom: 20px;
 }
 
 .range-controls .scale {
@@ -2258,7 +2262,7 @@ ul.breadcrumbs {
   width: 50px;
   margin: 0;
 
-  color: inherit;
+  color: rgba(0, 0, 0, 0.2);
   font: inherit;
 
   background: none;
@@ -2531,12 +2535,13 @@ ul.sorting-list {
   margin: 0;
   padding: 0;
   margin-top: 28px;
-  margin-left: 40px;
+  margin-left: 60px;
 
   list-style: none;
 }
 
-.sorting-list li {
+
+.sorting-list li:not(.arrows) {
   margin-right: 30px;
 }
 
@@ -2558,7 +2563,7 @@ ul.sorting-list {
   fill: #000000;
 }
 
-.sorting-list li a{
+.sorting-list li a {
   color: rgba(0, 0, 0, 0.3);
 
 
@@ -2566,9 +2571,11 @@ ul.sorting-list {
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
+  text-decoration: none;
 
   display: inline-block;
   float: left;
+
 }
 
 .sorting-list li a:hover {
@@ -2906,10 +2913,10 @@ ul.pagination-list {
 
 .inner-page .logout {
   width: 50px;
-  padding-left: 15px;
+
 }
 
-.inner-page .compare-products {
+.inner-page .main-footer .compare-products {
   position: relative;
   margin: 0;
   padding: 0;
