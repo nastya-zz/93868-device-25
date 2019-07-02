@@ -19,11 +19,10 @@
         <div class="header-columns">
           <div class="site-search">
             <form class="search" action="https://echo.htmlacademy.ru" method="post">
-              <input type="search" name="search" placeholder="Поиск по сайту" id="search-field"><!--
-              --><button class="search-btn" type="submit" name="search-btn">Найти</button>
-              <div class="visually-hidden">
-                <label for="search-field" aria-label="">Поиск по сайту</label>
-              </div>
+              <label for="search-field" aria-label="поиск по сайту">
+
+                <input type="search" name="search" placeholder="Поиск по сайту" id="search-field">
+              </label>
             </form>
           </div>
 
@@ -97,14 +96,14 @@
 				            <li class="current-type"><a href="#">По цене</a></li>
 				            <li><a href="#">По типу</a></li>
 				            <li><a href="#">По популярности</a></li>
-                    <li class="arrows">
-                      <a href="#"><span class="visually-hidden sorting-button">Вверх</span>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="" d="M5.5 0L0 10h11z"/>
+                    <li>
+                      <a href="#"><span class="visually-hidden social-button">Вверх</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 10L0 0h11"/>
                         </svg>
                       </a>
-                      <a class="sort-active" href="#"><span class="visually-hidden sorting-button">Вниз</span>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="" d="M5.5 10L0 0h11"/>
-                        </svg>
+                      <a href="#"><span class="visually-hidden social-button">Вниз</span>
+                          <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 0L0 10h11z"/>
+                          </svg>
                       </a>
                     </li>
 				          </ul>
@@ -112,7 +111,9 @@
   				</div>
 
   			</div>
-	       <div class="wrapper line-2">
+
+
+  			<div class="wrapper line-2">
 
   				<div class="inner-container">
 
@@ -156,7 +157,7 @@
 					            <legend>Bluetooth</legend>
 					            <ul>
 					              <li class="filter-option">
-					                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="bluetooth" value="yes" id="yes" checked>
+					                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="bluetooth" value="yes" id="yes"checked>
 					                <label for="yes">
 					                  Есть
 					                </label>
@@ -183,7 +184,6 @@
                     </h3>
                   </a>
                     <p>
-                      <a class="add-to-compare" href="#">Добавить к сравнению</a>
                       <img src="img/item-1-lubitel.jpg" width="360" height="380" alt="Любительская селфи-палка">
                       <a class="basket-button" href="basket.html">В корзину</a>
                     </p>
@@ -197,7 +197,6 @@
                     </h3>
                   </a>
                     <p>
-                      <a class="add-to-compare" href="#">Добавить к сравнению</a>
                       <img src="img/item-2-pro-monopod.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
                       <a class="basket-button" href="basket.html">В корзину</a>
                     </p>
@@ -211,7 +210,6 @@
                     </h3>
                   </a>
                   <p>
-                    <a class="add-to-compare" href="#">Добавить к сравнению</a>
                     <img src="img/item-3-unsinkable-monopod.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
                     <a class="basket-button" href="basket.html">В корзину</a>
                   </p>
@@ -224,35 +222,32 @@
                     </h3>
                   </a>
                     <p>
-                      <a class="add-to-compare" href="#">Добавить к сравнению</a>
                       <img class="" src="img/item-4-followme-monopod.jpg" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
                       <a class="basket-button" href="basket.html">В корзину</a>
                     </p>
-              </li>
 
+              </li>
             </ul>
 
 				          <ul class="pagination-list">
 				            <li class="pagination-button btn-back">
 				              <a href="#">Назад</a>
 				            </li>
-				            <li class="pagination-wrap">
-                      <ul>
-  				              <li class="pagination-item">
-  				                <a  class="current" href="#">1</a>
-  				              </li>
-  				              <li class="pagination-item ">
-  				                <a href="#">2</a>
-  				              </li>
-  				              <li class="pagination-item">
-  				                <a href="#">3</a>
-  				              </li>
-                    </ul>
-				           </li>
-				           <li class="pagination-button btn-next">
+				            <div class="pagination-wrap">
+				              <li class="pagination-item">
+				                <a class="pagination-item current pagination-item" href="#">1</a>
+				              </li>
+				              <li class="pagination-item">
+				                <a href="#">2</a>
+				              </li>
+				              <li class="pagination-item">
+				                <a href="#">3</a>
+				              </li>
+				            </div>
+				            <li class="pagination-button btn-next">
 				              <a href="#">Вперед</a>
 				            </li>
-				         </ul>
+				          </ul>
   					</div>
 
   				</div>
@@ -307,12 +302,10 @@
         </div>
         <div class="footer-user-navigation">
           <div class="footer-user-navigation-list">
-            <div class="footer-account">
-              <a class="footer-personal-account" href="#">
-                Валентин Петухов
-              </a>
-              <a class="logout" href="#">Выйти</a>
-            </div>
+            <a class="footer-personal-account" href="#">
+              Валентин Петухов
+            </a>
+            <a class="logout" href="#">Выйти</a>
             <a class="compare-products" href="compare.html">
               Сравнить
             </a>
@@ -320,7 +313,7 @@
               Корзина
             </a>
           </div>
-          <p class="contact-phone"> Тел.: +7 (495) 495-95-95</p>
+          <p class="contact-phone"> Тел.: +7(945)495-95-95</p>
           <p class="copyright">
             <a class="htmlacademy-logo" href="https://htmlacademy.ru" aria-label="логотип HTMLacademy">
               <img src="img/logo-html.svg" alt="ссылка на сайт HTMLacademy">
