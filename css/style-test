@@ -1,8 +1,0 @@
-.inner-container {
-
-	display: flex;
- 	width: 70%;
-  	min-width: 400px;
-  	margin: auto;
-  	border: 1px dashed gray;
-}
