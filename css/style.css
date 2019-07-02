@@ -1651,13 +1651,12 @@ p.map-container {
 
   width: 80px;
   height: 7px;
-  background-color: #464646;
-
 }
 
 .footer-logo img {
   margin-bottom: 21px;
 }
+
 .footer-logo img:hover {
   opacity: 0.6;
 }
@@ -1674,7 +1673,7 @@ p.map-container {
 .footer-user-navigation {
   width: 360px;
   margin-left: auto;
-  background-color: #ffc600 ;
+  background-color: #464646 ;
 }
 
 .footer-logo p,
