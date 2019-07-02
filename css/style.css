@@ -1674,6 +1674,7 @@ p.map-container {
 .footer-user-navigation {
   width: 360px;
   margin-left: auto;
+  background-color: #ffc600 ;
 }
 
 .footer-logo p,
