@@ -17,6 +17,39 @@
 
 }
 
+@keyframes faceInDown {
+  0% {
+    opacity: 0;
+    transform: translate3d(0px, -100%, 0px);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
+
 /* body > *,
 body > * > *,
 body > * > * > * {
@@ -1887,6 +1920,7 @@ a.htmlacademy-logo:active {
 
   border-radius: 50%;
   border: 0;
+  z-index: 5;
 
   cursor: pointer;
 }
@@ -2049,14 +2083,29 @@ form.contact-us textarea:invalid:not(:placeholder-shown) {
 }
 
 .modal-map p {
+  position: absolute;
   padding: 0;
   margin: 0;
+  z-index: 1;
+  top:0;
+  left: 0
 }
 
 .modal-show {
   display: block;
+
+  animation: faceInDown 0.6s;
 }
 
+/* .modal-error {
+  animation: shake 0.6s;
+} */
+.modal-map iframe {
+  position: relative;
+  z-index: 2;
+
+  border: none;
+}
 /* стили внутренней страницы */
 .inner-page .main-header {
   margin-bottom: 40px;
