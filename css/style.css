@@ -1436,7 +1436,8 @@ p.map-container {
 }
 .footer-navigation {
   position: absolute;
-  padding-left: 361px;
+  left: 50%;
+  transform: translateX(-220px);
   width: 440px;
 }
 
