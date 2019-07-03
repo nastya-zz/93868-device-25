@@ -651,8 +651,10 @@ a.basket:active::before {
   position: relative;
   padding-top: 80px;
   padding-left: 46px;
-  width: 500px;
+  width: 550px;
   z-index: 1;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
 }
 
 .slide-details p {
@@ -885,8 +887,8 @@ a.basket:active::before {
   font-family: "Gilroy", Arial, sans-serif;
   font-size: 18px;
   line-height: 24px;
-  letter-spacing: 0.18px;
-  font-weight: normal;
+  letter-spacing: 0.16px;
+  font-weight: 800;
   text-align: left;
 }
 
