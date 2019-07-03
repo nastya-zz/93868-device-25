@@ -885,8 +885,8 @@ a.basket:active::before {
   font-family: "Gilroy", Arial, sans-serif;
   font-size: 18px;
   line-height: 24px;
-  letter-spacing: .18px;
-  font-weight: 800;
+  letter-spacing: 0.18px;
+  font-weight: normal;
   text-align: left;
 }
 
