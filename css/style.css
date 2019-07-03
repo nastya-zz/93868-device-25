@@ -1,7 +1,8 @@
 @font-face {
   font-family: 'Gilroy';
-  src: url('../fonts/gilroyextrabold-webfont.woff2') format('woff2'),
-       url('../fonts/gilroyextrabold-webfont.woff') format('woff');
+  src:  url('../fonts/gilroyextrabold-webfont.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/gilroyextrabold-webfont.woff2') format('woff2'),
+        url('../fonts/gilroyextrabold-webfont.woff') format('woff');
   font-weight: 800;
   font-style: normal;
 }
@@ -9,8 +10,9 @@
 
 @font-face {
   font-family: 'Gilroy';
-  src: url('../fonts/gilroylight-webfont.woff2') format('woff2'),
-       url('../fonts/gilroylight-webfont.woff') format('woff');
+  src:  url('../fonts/gilroylight-webfont.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/gilroylight-webfont.woff2') format('woff2'),
+        url('../fonts/gilroylight-webfont.woff') format('woff');
   font-weight: 300;
   font-style: normal;
 }
