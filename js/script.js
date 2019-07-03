@@ -5,6 +5,8 @@ var close = document.querySelector(".modal-close");
 var form = popup.querySelector(".contact-us");
 var userName = popup.querySelector("[name=user-name]");
 var eMail = popup.querySelector("[name=user-email]");
+
+var overlay = document.querySelector(".overlay");
 // var storage = localStorage.getItem("name");
 
 var isStoragSupport = true;
@@ -19,6 +21,7 @@ try {
 contact.addEventListener("click", function (evt) {
   evt.preventDefault();
   popup.classList.add("modal-show");
+  overlay.classList.add("overlay-show");
   userName.focus();
   if (storage) {
     userName.value = storage;
@@ -28,6 +31,7 @@ contact.addEventListener("click", function (evt) {
 close.addEventListener("click", function (evt){
   evt.preventDefault();
   popup.classList.remove("modal-show");
+  overlay.classList.remove("overlay-show");
 });
 
 form.addEventListener("submit", function (evt) {
@@ -50,20 +54,21 @@ window.addEventListener("keydown", function (evt) {
   }
 });
 
-
-
 var route = document.querySelector(".map");
 var map = document.querySelector(".modal-map");
 var closeMap = document.querySelector(".close-map");
 
+
 route.addEventListener("click", function (evt) {
   evt.preventDefault();
   map.classList.add("modal-show");
+  overlay.classList.add("overlay-show");
 });
 
 closeMap.addEventListener("click", function (evt) {
   evt.preventDefault();
   map.classList.remove("modal-show");
+  overlay.classList.remove("overlay-show");
 });
 
 window.addEventListener("keydown", function (evt) {
@@ -73,4 +78,13 @@ window.addEventListener("keydown", function (evt) {
       map.classList.remove("modal-show");
     }
   }
+});
+
+// клик по оверлэю закрывает окна
+
+overlay.addEventListener("click", function(evt) {
+  evt.preventDefault();
+  popup.classList.remove("modal-show");
+  map.classList.remove("modal-show");
+  overlay.classList.remove("overlay-show");
 });
