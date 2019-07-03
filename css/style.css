@@ -1081,25 +1081,8 @@ div.main-header-logo  {
           align-items: center;
 
 }
-/* .category-back {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 
-  width: 160px;
-  height: 160px;
-
-
-  background-color: rgba(255, 204, 51, 0.5);
-} */
-
-.popular-list li:nth-child(1) h3::after {
+.category:nth-child(1) h3::after {
 
   background-image: url("../img/popular-1.svg");
   background-repeat: no-repeat;
@@ -1139,9 +1122,7 @@ div.main-header-logo  {
   background-position: 50% 50%;
 }
 
-/* background-image: url("../img/popular-1.svg");
-background-repeat: no-repeat;
-background-position: 50% 50%; */
+
 
 .category a:hover h3::before,
 .category a:focus h3::before  {
@@ -2098,6 +2079,17 @@ form.contact-us textarea:invalid:not(:placeholder-shown) {
   animation: faceInDown 0.6s;
 }
 
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  width: 100%;
+  left: 100%;
+
+  background-color: rgba(0, 0, 0, 0.3);
+}
 /* .modal-error {
   animation: shake 0.6s;
 } */
