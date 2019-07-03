@@ -238,7 +238,7 @@ div.main-header-logo  {
   top: -17px;
   left: 60px;
   width: 163px;
-  height: 35;
+  height: 35px;
 }
 
 .header-columns {
@@ -696,7 +696,7 @@ div.main-header-logo  {
 }
 
 .slide {
-  position:;
+
 
   margin: 0;
   padding: 0;
@@ -1873,9 +1873,7 @@ p.contact-phone {
   color: rgba(255, 255, 255, 0.3);
 }
 
-.contact-phone {
-  text-align:;
-}
+
 a.htmlacademy-logo:hover {
   opacity: 0.6;
 }
@@ -2091,7 +2089,7 @@ form.contact-us textarea:invalid:not(:placeholder-shown) {
   margin: 0;
   z-index: 1;
   top:0;
-  left: 0
+  left: 0;
 }
 
 .modal-show {
