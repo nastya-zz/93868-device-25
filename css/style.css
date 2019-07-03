@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'Gilroy';
-  src:  url('../fonts/fonts/gilroyextrabold.woff2') format('woff2'),
+  src:  url('../fonts/gilroyextrabold.woff2') format('woff2'),
         url('../fonts/gilroyextrabold.woff') format('woff');
   font-weight: 800;
   font-style: normal;
@@ -885,7 +885,7 @@ a.basket:active::before {
   font-family: "Gilroy", Arial, sans-serif;
   font-size: 18px;
   line-height: 24px;
-  letter-spacing: 0.18px;
+  letter-spacing: .18px;
   font-weight: 800;
   text-align: left;
 }
