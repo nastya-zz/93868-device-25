@@ -650,8 +650,8 @@ a.basket:active::before {
 .slide-details {
   position: relative;
   padding-top: 80px;
-  padding-left: 46px;
-  width: 550px;
+  padding-left: 54px;
+  width: 565px;
   z-index: 1;
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
