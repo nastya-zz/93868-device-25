@@ -131,6 +131,7 @@ button.button:not(.current-service) {
   background: transparent;
 
   border: none;
+  z-index: 0;
 }
 
  a.button::before,
@@ -978,6 +979,14 @@ a.basket:active::before {
   color: rgba(0, 0, 0, 0.3);
 }
 
+.wrapper-services {
+  background: -webkit-linear-gradient(top, transparent 100px, #e5e5e5 100px);
+  background: -o-linear-gradient(top, transparent 100px, #e5e5e5 100px);
+  background: linear-gradient(to bottom, transparent 100px, #e5e5e5 100px);
+  width: 100%;
+  min-width: 1160px;
+}
+
 .services {
   position: relative;
   display: -webkit-box;
@@ -990,22 +999,11 @@ a.basket:active::before {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-bottom: 160px;
+  margin-bottom: 91px;
+  padding-bottom: 70px;
   width: 1160px;
 
   background-color: transparent;
-}
-
-.services::after {
-  position: absolute;
-  content: "";
-  top: 100px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 10000px;
-  height: 90%;
-  z-index: -1;
-  background-color: #e5e5e5;
 }
 
 .services-wrap {
@@ -1113,16 +1111,17 @@ a.basket:active::before {
   vertical-align: middle;
 }
 
-.button.button-service:active {
+.button.button-service:active,
+.button.button-service:active::before {
   padding-left: 15px;
-
   color: #f0c52e;
   text-align:left;
 
   width: 285px;
-  height: 40px;
 
   background-color: #000000;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .button.current-service {
@@ -1148,7 +1147,7 @@ a.basket:active::before {
   text-transform: uppercase;
 
   text-align: left;
-  z-index: 1;
+  z-index: 0;
 
   background-color: #000000;
 }
@@ -1375,7 +1374,7 @@ p.map-container {
 /* стили подвала */
 
 .main-footer {
-  min-width: 1200px;
+  min-width: 1160px;
   width: 100%;
 
   margin-top: 84px;
